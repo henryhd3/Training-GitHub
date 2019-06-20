@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink to fit=no">
+
+    <script type="text/javascript" src="luckySevens.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Lucky Sevens</title>
+
+</head>
+<style>
+
+.btn{
+  background-color: palegreen;
+}
+
+
+
+</style>
+
+<body>
+    <div class='container'>
+    <h1 style="font-family: Comic Sans MS, arial;">Lucky Sevens</h1> <!-- Title -->
+    <div class='row'>
+<!--Form to place bet-->
+    <form name="luckySevens" onsubmit="return playL7();"
+           class="form-horizontal">
+            <div class="form-group">
+                <label for="bet">Place Bet: </label>
+                <input type="number" class="form-control" id="bet" placeholder="$0.00" required>
+            </div>
+
+<!--Button to play-->
+            <button type="submit" id="placeBet" class="btn badge-pill">Play</button>
+
+    </div>
+    </form>
+<!--Table for Results-->
+</br>
+<div class='row'>
+  <table id="results" class="table table-striped" style="width:50%">
+    <thead>
+      <th><h2 style="font-family: Comic Sans MS, arial;" class="text-center">Results</h2></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Starting Bet</td>
+        <td><span id="startBet"></span></td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td><span id="rollTotal"></span></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td>
+        <td><span id="winnings"></span></td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td><span id="maxRoll"></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</body>
+</html>

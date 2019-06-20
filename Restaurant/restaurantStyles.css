@@ -1,0 +1,29 @@
+/*
+Creator: Henry Davis III
+Date Created: 6/16/19
+Date Last Modified: 6/16/19
+*/
+
+
+header, footer{
+  text-align: center;
+  background-color: lightblue;
+}
+header{
+  height:150px;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+nav a:visited{
+  color: purple;
+}
+nav a:active{
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
